@@ -1,0 +1,18 @@
+.contenedor tipo el header{
+    max-width:1200px;
+    margin: 0 auto ;
+    o sea esto es para que quede a la mitad
+    no al inicio como lo tenemos, tendria que mover todo el contenedor ;
+}
+seria para el logo tal vez o la barra de navegacion 
+text-align: center;
+
+para global 
+html{
+    box-sizing:border-box;
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+
+

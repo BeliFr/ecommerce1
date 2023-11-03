@@ -1,0 +1,152 @@
+para seleccionar ejemplo el primer hijo
+de nav es con : dos puntos y despues el 
+first child  first of type, last ultimo
+
+
+
+si quiero seleccionar uno de los de enmedio
+le pongo el nth-child() en el
+parentesis el num de hijo
+no empieza desde cero, aqui si
+desde el 1
+
+ESPECIFIDAD
+saber que valor se va a tomar , es en cascada, se 
+aplica el último . 
+
+CLASES
+. por el atributo html , es un rango más
+las clases si puede ser la misma multiples veces
+el class soporta cualquier cnatidad de clases
+
+ejemplo dos en un elemento se ve asi 
+class="navegacion segundo-id"
+
+
+ID 
+# uno por elemento html, una vez x
+documento . el id no s eusa múltiples veces
+debe ser único, no el mismo
+sin compartir el nombre
+no puede tener nada despues
+guion medio o bajo si son dos palabras
+
+ESPECIFIDAD
+el id es mas pesado qe una clases
+etiqueta de html es mas abajo
+
+
+es mejor usar clases que id
+
+MODULOS 
+para escribir css, ma slimpio el html
+se crea una clase y luego se seleccionan
+sue elementos por medio desu etiqueta html 
+
+BOX MODEL
+CSS es una caja , medidas 4 cosas
+contenido
+padding (relleno)
+borde
+margen
+
+
+padding separa de la sorillas, eso se logra 
+o sea esta el cuadrado adentro el texto o la imagen
+y con padding cmo que se hace mas al centro 
+el txt o imagen, al ponerle un padding
+se va haciendo mas grande el width como en automatico
+entonces se le agrega un BOX-SIZING=border-box
+y asi se va adaptando al width que le dimos 
+CONTENT-BOX es sumado el contenido sumado el padding
+entoces es el width + padding y lo demas
+hacia las esquinas del elemento , hacia adentro
+
+
+MARGIN
+
+pone distancia de orillas hacia afuera 
+es hacia afuera del elemento 
+
+
+
+BOX SIZING 
+que se aplique a todos los elementos 
+podemos ponerle
+
+html{
+    box-sizing:border-box;
+}
+*, *:before, *after{
+    box-sizog:inherit;
+}
+
+
+
+DISPLAY
+
+
+BLOCK 
+un elemento se coloca debajo del otro
+sin importar su tamaño y el contenido
+siempre block hacia abajo 
+
+INLINE 
+se posicionara a la derecha una vez que haya tomado
+el espacio que requiere . No width ni height
+
+INLINE BLOCK
+se le da with,  y se colocan a la derecha
+
+p se van poniendo en BLOCK
+a enlaces se van poniendo en inline
+
+
+FLEX BOX 
+Se adapta 
+ALINEACION
+
+Justify-CONTENT
+si es en row lo alinea horizontalmente, centro, dere, izq o a lo
+largo del contenedor ******
+si es column lo alinea verticalmente
+ROW ES JUSTIFY CONTENT
+
+ALIGN ITEMS 
+lo distribue lateralmente al inicio en centro final
+en columnas pra horizontalmente ***** 
+ALIGN ITEMS COLUMNS 
+
+
+GRID
+ubicacion tamaño distribucion de elementos en sitios web
+distribuye en row y column
+display:grid 
+
+es como una caja 
+
+columns - grid template columns
+
+filas grid-temprate-row
+
+areas
+grid-template-areas
+
+GRID-LINES 
+cada linea se ve como se posiicona y se ven en navegador 
+para decir donde posicionar los elementos hijos 
+
+GRID TRACK
+
+medias, horizontal y vertical 
+
+GRID CELL
+este es co row y areas, celdas
+
+GRID AREAS 
+utilizasnombres 
+
+grid template columns , aparece una ultima por comose dividen 
+se van dibujand tipo tabla creando las columnas , se 
+van dibujando y se van posicionando en ellos 
+USAR FR no px , 
